@@ -17,7 +17,7 @@ Library Manager: ArmAr.exe V6.14.1
 Hex Converter:   FromElf.exe V6.14.1
 CPU DLL:         SARMCM3.DLL V5.32.0.0
 Dialog DLL:      DCM.DLL V1.17.3.0
-Target DLL:      UL2CM3.DLL V1.163.9.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
 Dialog DLL:      TCM.DLL V1.46.0.0
  
 <h2>Project:</h2>
@@ -27,18 +27,13 @@ Project File Date:  01/24/2021
 <h2>Output:</h2>
 *** Using Compiler 'V6.14.1', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-assembling startup_stm32f10x_md.s...
-compiling main.c...
-RTE/Device/STM32F103C8/system_stm32f10x.c(167): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
-__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
-            ^
-RTE/Device/STM32F103C8/system_stm32f10x.c(167): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
-    ^
+main.c(27): warning: 'return' will never be executed [-Wunreachable-code-return]
+                return 0;
+                       ^
 1 warning generated.
-compiling system_stm32f10x.c...
+compiling main.c...
 linking...
-Program Size: Code=608 RO-data=252 RW-data=0 ZI-data=1632  
+Program Size: Code=1372 RO-data=252 RW-data=0 ZI-data=1632  
 ".\Objects\blinking.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
